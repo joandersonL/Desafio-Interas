@@ -19,7 +19,7 @@ describe('Users', () => {
 
     expect(response.body).toMatchObject({
       name: 'John Doe',
-      username: 'johndoe',
+      username: 'johndoe'
     });
   });
 
