@@ -40,7 +40,6 @@ app.get('/users', (request, response) => {
 });
 
 app.get('/users/:id', (request, response) => {
-  // Complete aqui
   const { id } = request.params;
   const user = users.find((user) => user.id === id);
   if (!user) {
@@ -52,7 +51,7 @@ app.get('/users/:id', (request, response) => {
 
 
 app.put('/users/:id', (request, response) => {
-  // Complete aqui
+  
   const { id } = request.params;
   const { name, username } = request.body;
 
